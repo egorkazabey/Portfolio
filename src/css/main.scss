@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
+
+$black: var(--dark-color, #21243D);
+$font: Heebo;
+
+.container {
+    width: 856px;
+    margin: 0 auto;
+}
+
+.nav {
+    &_ul {
+        color: $black ;
+        display: flex;
+        gap: 33px;
+        justify-content: right;
+        padding-top: 27px;
+        padding-right: 60px;
+            font-family: $font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            cursor: pointer;
+            text-decoration: none;
+    
+    }
+    &_li {
+        :hover {
+            color: var(--primary, #FF6464);
+            transition: 0.3s;
+        }
+    }
+}
+
+.header {
+    &_h1 {
+        margin-top: 158px;
+        color: $black;
+        font-family: $font;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px; /* 136.364% */
+    }
+    &_text {
+        margin-top: 40px;
+        font-family: $font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &_btn {
+        margin-bottom: 71px;
+        margin-top: 38px;
+        width: 208px;
+        height: 47px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        background: var(--primary, #FF6464);
+        border: none;
+            color: #FFF;
+            font-family: $font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            cursor: pointer;
+    }
+    &_img {
+        margin-top: 155px;
+        padding-left: 85px;
+    }
+}
+
+.blog {
+    margin-top: 71px;
+    clear: both;
+    height: 396px;
+    flex-shrink: 0;
+    background: #EDF7FA;
+    &_information {
+        margin-top: 78px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.information {
+    &_recentposts {
+        color: $black;
+        font-family: $font;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px; /* 272.727% */
+    }
+    &_viewall {
+        color: var(--secondry, #00A8CC);
+        text-align: right;
+        font-family: $font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px; /* 272.727% */
+        cursor: pointer;
+    }
+}
