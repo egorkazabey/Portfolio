@@ -10,6 +10,20 @@
 <body>
     <header class="header">
         <nav class="nav">
+            <div class="top-nav">
+                <div class="navigation_name">
+                  Yehor Havrylov
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+              </label>
+                <ul class="menu">
+                  <li>Works</li>
+                  <li>Blog</li>
+                  <li>Contact</li>
+                </ul>
+            </div>
             <ul class="nav_ul">
                 <li class="nav_li"><a href="../html/works.html">Works</a></li>
                 <li class="nav_li"><a href="../html/blog.html">Blog</a></li>
@@ -29,11 +43,92 @@
     <section class="blog">
         <div class="container" > 
             <div class="blog_information">
-                <div class="information_recentposts">Recent posts</div>
-                <div class="information_viewall">View all</div>
+                <div class="section_info">Recent posts</div>
+                <div class="information_viewall"><a href="blog.html" style="color: var(--secondry, #00A8CC);">View all</a></div>
+            </div>
+            <div class="blog_posts">
+                <div class="blog_post">
+                    <div class="post_header">
+                        <a href="">                        Making a design system from <br> scratch</a>
+                    </div>
+                    <div class="post_date">12 Feb 2020 | <span class="post_tags">Design, Pattern</span></div>
+                    <div class="post_text">
+                        Amet minim mollit non deserunt ullamco est sit <br> aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit. Exercitation veniam <br>consequat sunt nostrud amet.
+                    </div>
+                </div>
+                <div class="blog_post">
+                    <div class="post_header">
+                        <a href="">                        Creating pixel perfect icons in <br> Figma</a>
+                    </div>
+                    <div class="post_date">12 Feb 2020 | <span class="post_tags">Figma, Icon Design</span></div>
+                    <div class="post_text">
+                        Amet minim mollit non deserunt ullamco est sit <br> aliqua dolor do amet sint. Velit officia consequat <br> duis enim velit mollit. Exercitation veniam <br>consequat sunt nostrud amet.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    222
+
+    <section class="works">
+        <div class="container">
+            <div class="section_info" style="margin-top: 15px; margin-bottom: 22px;">Featured works</div>
+            <div class="work_block" style="display: flex;">
+                <img src="../img/featured works/first.svg" alt="work" class="block_img">
+                <div class="flex" style="padding-left: 18px;">
+                    <div class="block_header">Designing Dashboards</div>
+                    <div class="block_secondline">
+                        <button class="block_year">2020</button>
+                        <div class="block_class">Dashboard</div>
+                    </div>
+                    <div class="block_text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br> officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br> nostrud amet.</div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="858" height="2" viewBox="0 0 858 2" fill="none" class="svg_line">
+                <path d="M0 1L858 1.00008" stroke="#E0E0E0"/>
+              </svg>
+            <div class="work_block" style="display: flex; margin-top: 46px;">
+                <img src="../img/featured works/second.svg" alt="work" class="block_img">
+                <div class="flex" style="padding-left: 18px;">
+                    <div class="block_header">Vibrant Portraits of 2020</div>
+                    <div class="block_secondline">
+                        <button class="block_year">2018</button>
+                        <div class="block_class">Illustration</div>
+                    </div>
+                    <div class="block_text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br> officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br> nostrud amet.</div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="858" height="2" viewBox="0 0 858 2" fill="none" class="svg_line">
+                <path d="M0 1L858 1.00008" stroke="#E0E0E0"/>
+              </svg>
+            <div class="work_block" style="display: flex; margin-top: 46px;">
+                <img src="../img/featured works/third.svg" alt="work" class="block_img">
+                <div class="flex" style="padding-left: 18px;">
+                    <div class="block_header">36 Days of Malayalam type</div>
+                    <div class="block_secondline">
+                        <button class="block_year">2018</button>
+                        <div class="block_class">Typography</div>
+                    </div>
+                    <div class="block_text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit <br> officia consequat duis enim velit mollit. Exercitation veniam consequat sunt <br> nostrud amet.</div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="858" height="2" viewBox="0 0 858 2" fill="none" class="svg_line">
+                <path d="M0 1L858 1.00008" stroke="#E0E0E0"/>
+              </svg>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container" >
+            <div class="footer_apps">
+                <a href=""><img src="../img/footer/fb.svg" alt="Facebook" class="apps_icon"></a>
+                <a href=""><img src="../img/footer/insta.svg" alt="" class="apps_icon"></a>
+                <a href=""><img src="../img/footer/Group.svg" alt="" class="apps_icon"></a>
+                <a href=""><img src="../img/footer/Linkedin.svg" alt="" class="apps_icon"></a>
+            </div>
+            <div class="footer_copyright">Copyright ©2020 All rights reserved </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
