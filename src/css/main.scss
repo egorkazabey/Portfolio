@@ -8,6 +8,10 @@ $font: Heebo;
     margin: 0 auto;
 }
 
+.top-nav {
+    display: none;
+}
+
 .nav {
     &_ul {
         color: $black ;
@@ -101,6 +105,7 @@ $font: Heebo;
 
 .information {
     &_viewall {
+        display: block;
         color: var(--secondry, #00A8CC);
         text-align: right;
         font-family: $font;
@@ -237,10 +242,27 @@ $font: Heebo;
 }
 
 
+.header_img_mobile {
+    display: none;
+}
+
+.screen {
+    float: left; width: 60%;
+}
+
 @media (max-width: 376px) {
+    .screen {
+        float: unset;
+        width: auto;
+        text-align: center;
+    }
+
+    .header_h1 {
+        margin-top: 43px;
+        text-align: center;
+    }
 
     .top-nav {
-        width: 444px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -254,7 +276,6 @@ $font: Heebo;
       }
       
       .menu {
-        width: 467px;
         display: flex;
         flex-direction: row;
         list-style-type: none;
@@ -328,7 +349,7 @@ $font: Heebo;
           display: flex;
         }
         .menu {
-          width: 467px;
+          width: 100%;
           position: absolute;
           top: 0;
           margin-top: 66px;
@@ -372,8 +393,8 @@ $font: Heebo;
       }
 
     .container {
-        width: 327px;
-        justify-content: center;
+        width: 375px;
+        margin: 0 auto;
     }
     .svg_line {
         display: none;
@@ -387,4 +408,53 @@ $font: Heebo;
         font-weight: 700;
         line-height: 60px; /* 136.364% */
     }
+
+    .work_blocks {
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .header_img {
+        display: none;
+    }
+    .header_img_mobile {
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .information_viewall {
+        display: none;
+    }
+
+    .section_info {
+        margin: 0 auto;
+    }
+    .blog_posts {
+        flex-direction: column;
+        gap: 17px;
+    }
+    .blog_post {
+        padding: 0;
+        width: 100%;
+    }
+
+    .post {
+        &_header {
+            padding: 0px 18px 0px 8px;
+            margin-bottom: 12px;
+            font-size: 25px;
+        }
+        &_date {
+            padding: 0px 18px 0px 8px;
+        }
+        &_text {
+            padding: 0px 18px 22px 8px;
+            margin-top: 19px;
+        }
+    }
+
+    .works {
+    }
+    
 }

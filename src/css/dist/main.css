@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.top-nav {
+  display: none;
+}
+
 .nav_ul {
   color: var(--dark-color, #21243D);
   display: flex;
@@ -89,6 +93,7 @@
 }
 
 .information_viewall {
+  display: block;
   color: var(--secondry, #00A8CC);
   text-align: right;
   font-family: Heebo;
@@ -217,9 +222,26 @@
   line-height: normal;
 }
 
+.header_img_mobile {
+  display: none;
+}
+
+.screen {
+  float: left;
+  width: 60%;
+}
+
 @media (max-width: 376px) {
+  .screen {
+    float: unset;
+    width: auto;
+    text-align: center;
+  }
+  .header_h1 {
+    margin-top: 43px;
+    text-align: center;
+  }
   .top-nav {
-    width: 444px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -230,7 +252,6 @@
     padding: 1em;
   }
   .menu {
-    width: 467px;
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -293,7 +314,7 @@
     display: flex;
   }
   .menu {
-    width: 467px;
+    width: 100%;
     position: absolute;
     top: 0;
     margin-top: 66px;
@@ -337,8 +358,8 @@
 }
 @media (max-width: 376px) {
   .container {
-    width: 327px;
-    justify-content: center;
+    width: 375px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 376px) {
@@ -354,5 +375,59 @@
     font-style: normal;
     font-weight: 700;
     line-height: 60px; /* 136.364% */
+  }
+}
+@media (max-width: 376px) {
+  .work_blocks {
+    flex-direction: column;
+    display: flex;
+  }
+}
+@media (max-width: 376px) {
+  .header_img {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  .header_img_mobile {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 376px) {
+  .information_viewall {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  .section_info {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 376px) {
+  .blog_posts {
+    flex-direction: column;
+    gap: 17px;
+  }
+}
+@media (max-width: 376px) {
+  .blog_post {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 376px) {
+  .post_header {
+    padding: 0px 18px 0px 8px;
+    margin-bottom: 12px;
+    font-size: 25px;
+  }
+  .post_date {
+    padding: 0px 18px 0px 8px;
+  }
+  .post_text {
+    padding: 0px 18px 22px 8px;
+    margin-top: 19px;
   }
 }
