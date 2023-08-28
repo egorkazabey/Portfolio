@@ -37,6 +37,10 @@ $font: Heebo;
     }
 }
 
+.mobile-line {
+    display: none;
+}
+
 .header {
     &_h1 {
         margin-top: 158px;
@@ -79,9 +83,10 @@ $font: Heebo;
 }
 
 .blog {
+
     margin-top: 71px;
     clear: both;
-    height: 396px;
+    height: 420px;
     flex-shrink: 0;
     background: #EDF7FA;
     &_information {
@@ -454,7 +459,26 @@ $font: Heebo;
         }
     }
 
-    .works {
+    .work_block_mobile {
+        display: none !important;
     }
     
+    .work_block {
+        flex-direction: column;
+    }
+
+    .block_img {
+        padding: 0 18px;
+    }
+    
+    .section_info {
+        text-align: center;
+    }
+    .mobile-line {
+        display: block;
+    }
+
+    .blog {
+        height: 645px;
+    }
 }
